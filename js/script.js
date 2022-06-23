@@ -3,6 +3,8 @@ const pipe = document.querySelector(".pipe-game");
 const clouds = document.querySelector(".cloud-game");
 const ground = document.querySelector(".ground-game");
 const trees = document.querySelector(".trees");
+const mountain = document.querySelector(".mountain-game");
+const bgclouds= document.querySelector(".bg-clouds");
 const titlescreen = document.querySelector(".title-screen");
 
 //TITLE-SCREEN
@@ -46,6 +48,10 @@ const loopGame = setInterval(() => {
     ground.classList.add("animation-stop");
 
     trees.classList.add("animation-stop");
+
+    mountain.classList.add("animation-stop");
+
+    bgclouds.classList.add("animation-stop");
     
     clearInterval(loopGame);
   }
